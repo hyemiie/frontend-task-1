@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+    <h1>Hi, Welcome to My Web Page</h1>
+
+    <div data-testid="slackUserName" id="username">Hyemiie</div>
+
+<img src="./WhatsApp Image 2023-07-06 at 20.46.34 (1) (1).jpeg" alt="Hyemiie" data-testid="slackDisplayImage">
+
+<div class="details"> 
+<p id="label">Slack username: <span data-testid="slackUserName">Hyemiie</span></p>
+<p id="label">Current day: <span data-testid="currentDayOfTheWeek" id="currentDay"> </span></p>
+<p id="label">Current UTC Time: <span data-testid="currentUTCTime" id="utcTime"> </span></p>
+<p id="label">Learning Track:<span data-testid="myTrack">Frontend</span></p>
+
+<a href="https://github.com/hyemiie/" data-testid="githubURL">This is a link to my github repository</a>
+</div>
+</div>
+</body>
+
+<script>
+
+function getCurrentDay() {
+    const dateElement = document.getElementById("currentDay");
+    const currentDate = new Date();
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const currentDay = daysOfWeek[currentDate.getDay()];
+    dateElement.textContent = `${currentDay}`;
+}
+
+
+function getCurrentUTCTimeInMilliseconds() {
+    const utcTimeElement = document.getElementById("utcTime");
+    const currentUTCMilliseconds = new Date().getTime();
+    utcTimeElement.textContent = `${currentUTCMilliseconds}`;
+}
+
+
+getCurrentUTCTimeInMilliseconds();
+getCurrentDay();
+</script>
+</html>

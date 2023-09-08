@@ -1,0 +1,89 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the body for background and centering */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the card container */
+.card {
+    background-color: rgb(199, 204, 209);
+    border: 5px solid #c4b7b7;
+    border-radius: 5px;
+    width:900px;
+    height: 700px;
+    padding: 1px;
+    box-shadow: 0px 0px 10px rgba(104, 200, 100, 0.1);
+    /* overflow: hidden; */
+    /* text-align: center; */
+}
+
+/* Style the heading */
+h1 {
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF;
+}
+
+#username{
+    text-align: center;
+    color: #4a4e52;
+    font-size: 30px;
+}
+/* Style the text elements */
+p {
+    color: #555;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Style the image */
+img {
+    max-width: 50%;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 200px;
+   
+}
+
+.details{
+    margin-top: 2px;
+    background-color: aliceblue;
+    width: 800px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    
+}
+#label{
+    color:black; 
+     font-weight: bold;
+}
+
+
+a {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* On hover, change link color */
+a:hover {
+    color: #0056b3;
+}
